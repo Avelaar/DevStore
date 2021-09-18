@@ -1,5 +1,5 @@
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
-import devStore from './pages/devStore/index'
+import devStore from './pages/menu/index'
 
 export default function Routes() {
     return (
