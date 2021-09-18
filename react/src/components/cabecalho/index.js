@@ -6,14 +6,14 @@ export default function Cabecalho () {
             <div className="Container2"> 
                 <div className="Comeco"> 
                     <div className="Comeco-imagem"> 
-                        <img src="/src/assets/images/icon.png" alt="" />
+                        <img src="/assets/images/icon.png" alt="" />
                         <div className="Comeco-notificacoes"> 3 </div> 
                     </div>
                     <div className="Comeco-texto"> Olá, Bruno de Oliveira </div> 
                 </div>
                 <div className="Final">
-                    <button> <img src="/src/assets/images/setinha.png" alt="" /> </button>
-                    <button> <img src="/src/assets/images/log-out.png" alt="" /> </button>
+                    <button> <img src="/assets/images/setinha.png" alt="" /> </button>
+                    <button> <img src="/assets/images/log-out.png" alt="" /> </button>
                 </div>
             </div>
         </Container>

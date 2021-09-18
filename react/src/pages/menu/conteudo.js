@@ -97,7 +97,7 @@ export default function Conteudo() {
 
     const deletarProduto = async(id) => {
         confirmAlert({
-            title: 'Deseja excluir o produto?',
+            title: 'Deseja remover este produto?',
             message: 'Clique para confirmar',
             buttons: [
               {
@@ -105,7 +105,7 @@ export default function Conteudo() {
                 onClick: async() => {
                     loading.current.continuousStart();
                     await api.deletarProduto(id)
-                    toast.dark('Produto excluido')
+                    toast.dark('Produto removido')
                     loading.current.complete();
                     carregarProdutos()
                 } 
@@ -210,10 +210,10 @@ export default function Conteudo() {
                                     <td> {item.ds_categoria} </td>
                                     <td> R$ {item.vl_preco_por} </td>
                                     <td> {item.qtd_estoque} </td>
-                                    <td className="img"> <button> <img src="/src/assets/images/alterar.png" alt=""
+                                    <td className="img"> <button> <img src="/assets/images/alterar.png" alt=""
                                         onClick={() => alterarProduto(item)} 
                                     /> </button> </td>
-                                    <td className="img"> <button> <img src="/src/assets/images/delete.png" alt=""
+                                    <td className="img"> <button> <img src="/assets/images/delete.png" alt=""
                                         onClick={() => deletarProduto(item.id_produto)}
                                     /> </button> </td>
                                 </tr>
